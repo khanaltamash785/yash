@@ -1,0 +1,126 @@
+
+.page{
+  height:100vh;
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // overflow: hidden;
+}
+.contanit_div{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  // justify-content: center;
+  // border: 1px solid black;
+  width:700px;
+  box-sizing: border-box;
+  margin-bottom: 5%;
+  margin-right: 5%;
+  .serial_number{
+    font-size: 25px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 5%; 
+    margin-top: 8px;
+    display: flex;
+    color:#444;
+    flex-direction: row;
+    align-items: center;
+    gap:20px;
+    @media screen and (max-width: 700px){
+      gap:5px;
+      width: 10%;
+      font-size: 20px;
+    }
+  }
+  @media screen and (max-width: 700px){
+    width:90%;
+  }
+  .content_body{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 95%;
+    @media screen and (max-width: 700px){
+      width: 85%;
+    }
+    .heading{
+      font-size: 25px;
+    }
+    .Textfield{
+      width:100%;
+      box-sizing: border-box;
+      margin-top: 30px;
+    }
+    .list_check_box{
+      display: flex;
+      flex-direction: column;
+      gap:10px;
+      max-height: 50vh;
+      overflow: scroll;
+      margin-top: 20px;
+      @media screen and (max-width: 700px){
+        width: 100%;
+        max-height: 65vh;
+        box-sizing: border-box;
+      }
+      .check_box{
+        background-color: #e8ebf0;
+        padding:8px 8px 8px 8px;
+        display: flex;
+        cursor: pointer;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap:20px;
+        border: 1px solid #abb5c7;
+        min-width:50%;
+        border-radius: 5px;
+        word-break: break-all;
+        @media screen and (max-width: 700px){
+          padding:8px 8px 8px 8px;
+          box-sizing: border-box;
+          width:100%;
+        }
+        .check_box_serial_number{
+          padding:3px 6px 3px 6px;
+          align-items: center;
+          display: flex;
+          font-size: 10px;
+          justify-content: center;
+          background-color: white;
+          border: 1px solid #abb5c7;
+        }
+      }
+    }
+    .ok_button{
+      margin-top: 15px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+  }
+  
+}
+
+
+.scroll_button{
+  position: fixed; bottom: 20px; right: 20px; 
+  display: flex;align-items: center;flex-direction: row;
+  gap:5px;
+  @media screen and (max-width: 700px){
+   display: none;
+  }
+}
+
+span.MuiLinearProgress-bar.MuiLinearProgress-barColorPrimary.MuiLinearProgress-bar1Determinate.css-5xe99f-MuiLinearProgress-bar1{
+  background-color: #203c6c;
+}
+span.MuiLinearProgress-root.MuiLinearProgress-colorPrimary.MuiLinearProgress-determinate.MuiMobileStepper-progress.css-1be5mm1-MuiLinearProgress-root-MuiMobileStepper-progress{
+  background-color: rgba(32, 60, 108, 0.3);
+}
+

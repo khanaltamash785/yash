@@ -1,0 +1,26 @@
+.Login_body{
+  display: flex;
+  align-items: center;
+  margin-top: 10%;
+  flex-direction: column;
+  height:100%;
+  box-sizing: border-box;
+  width: 100%;
+  @media screen and (max-width:700px) {
+    margin-top: 50%;
+  }
+  .Login_containt{
+    width: 25%;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width:700px) {
+      width: 80%;
+    }
+    .Log_heading{
+      font-size: 30px;
+    }
+  }
+}
